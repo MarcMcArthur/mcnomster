@@ -93,6 +93,16 @@
 
 <div class="clear"></div>
 
+<h1>Photos</h1>
+
+<% @place.photos.each do |photo| %>
+  <div>
+    <blockqoute>
+      <b><%= photo.caption %></b> -
+    </blockquote>
+  </div>
+<% end %>
+
 <% @place.comments.each do |comment| %>
   <div class="col-xs-12 col-sm-6">
     <blockquote>
