@@ -4,5 +4,5 @@ class Photo < ActiveRecord::Base
   belongs_to :place
   belongs_to :user
 
-  validates :picture, :presence => true
+  validates :picture, :caption, :presence => true
 end
