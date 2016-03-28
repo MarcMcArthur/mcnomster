@@ -16,12 +16,18 @@ h1, h2, h3, h4,h5, h6 {
 }
 
 body {
-  background: url('/assets/concrete_wall_2.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  /*background: url('/assets/Night-London.jpg');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
+  background: url('/assets/felt.png') no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
 }
 
 .navbar.navbar-inverse  {
   background: url('/assets/felt.png');
+  /*background-color: rgba(0,0,0,0.5);*/
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
   margin-bottom: 0;

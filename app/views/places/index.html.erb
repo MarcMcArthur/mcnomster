@@ -46,22 +46,29 @@
     <p><%= place.description %></p><br />
 
     <% if place.photos.present? %>
-      <div class="col-xs-12 col-sm-3">
+
+      <div class="col-xs-12 col-sm-4">
         <div id="image">
           <% if place.photos.last.picture.present? %>
             <%= image_tag place.photos.order("id ASC").last.picture, :class => 'img-responsive' %>
             <%= place.photos.last.caption %>
           <% end %>
         </div>
-      </div> 
+        <div>
+          <% if place.user.present? %>
+            <small><%= place.user.email %></small>
+          <% end %>
+        </div>
+      </div>
     <% end %>
-  <br />
-  <div class="clear"></div>
-    <% if place.user.present? %>
+  <!--<br />
+  <div class="clear"></div>-->
+   <!-- <% if place.user.present? %>
       <small><%= place.user.email %></small>
-    <% end %>
+    <% end %>-->
     <% if place.comments.present? %>
-      <div class="col-xs-12">
+
+      <div class="col-xs-12 col-sm-6">
         <blockquote>
           <% if place.comments.last.humanized_rating.present? %>
             <b><%= place.comments.last.humanized_rating %></b> 
